@@ -6,7 +6,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="bg-gray-100">
+
+   <nav class="bg-white shadow-md">
+    <div class="flex flex-row justify-between  mx-auto p-6">
+        <h1 class="text-2xl font-bold text-gray-700 cursor-pointer hover:text-blue-700">
+            DOM
+        </h1>
+
+        <ul class="gap-6 flex flex-row">
+            <li >
+                <a href="#" class="text-gray-700 text-xl cursor-pointer hover:text-blue-700">Home</a>
+            </li>
+
+            <li>
+                <a href="#" class="text-gray-700 text-xl cursor-pointer hover:text-blue-700">About</a>
+            </li>
+
+            <li>
+                <a href="#" class="text-gray-700 text-xl cursor-pointer hover:text-blue-700">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<<section class="bg-slate-200 py-10 px-4">
+
+    <h1 class="text-3xl text-center font-bold text-blue-700 mb-8">
+        Buy Beautiful Clothes
+    </h1>
+
+    <!-- Product Container -->
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Product 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+
+            <img src="/image/sports-1.png"
+                 alt="sports"
+                 class="w-40 mx-auto mb-4 rounded-lg">
+
+            <h2 class="text-lg font-semibold mb-2">Sport T-Shirt</h2>
+
+            <p class="text-gray-600 mb-4">Comfortable sportswear for everyday use.</p>
+
+            <div class="flex justify-center items-center gap-4">
+
+                <button onclick="change(this)"
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg transition">
+                    Add to cart
+                </button>
+
+                <span class="bg-green-500 text-white px-3 py-1 rounded-lg font-bold">
+                    $100
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+
+            <img src="/image/sports-2.png"
+                 alt="sports"
+                 class="w-40 mx-auto mb-4 rounded-lg">
+
+            <h2 class="text-lg font-semibold mb-2">Running Jacket</h2>
+
+            <p class="text-gray-600 mb-4">Lightweight jacket perfect for running.</p>
+
+            <div class="flex justify-center items-center gap-4">
+
+                <button onclick="change(this)"
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg transition">
+                    Add to cart
+                </button>
+
+                <span class="bg-green-500 text-white px-3 py-1 rounded-lg font-bold">
+                    $100
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="index.js"></script>
+            
     
 </body>
 </html>
